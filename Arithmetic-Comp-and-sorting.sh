@@ -12,3 +12,7 @@ echo "Entered number are : " $a $b $c
 comp1=$(( $a + $b * $c ))
 
 echo "Computed result ($a+$b*$c) = " $comp1
+
+comp2=$(( $a * $b + $c ))
+
+echo "Computed result ($a*$b+$c) = " $comp2
