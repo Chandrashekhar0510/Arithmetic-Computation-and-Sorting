@@ -19,3 +19,8 @@ echo "Computed result ($a*$b+$c) = " $comp2
 
 printf "Computed result ($c+$a/$c) = "
 echo $c $a $b | awk '{ print $1 + $2 / $3 }'
+
+
+printf "Computed result of UC-5 = "
+echo $a $b $c | awk '{ print $1 % $2 + $3 }'
+
