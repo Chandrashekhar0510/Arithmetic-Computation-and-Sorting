@@ -16,3 +16,6 @@ echo "Computed result ($a+$b*$c) = " $comp1
 comp2=$(( $a * $b + $c ))
 
 echo "Computed result ($a*$b+$c) = " $comp2
+
+printf "Computed result ($c+$a/$c) = "
+echo $c $a $b | awk '{ print $1 + $2 / $3 }'
