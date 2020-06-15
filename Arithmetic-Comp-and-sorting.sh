@@ -31,6 +31,12 @@ dict[computation-1]="$comp1"
 dict[computation-2]="$comp2"
 dict[computation-3]="$comp3"
 dict[computation-4]="$comp4"
-echo "Dictionary keys " ${!dict[@]}
-echo "Dictionary values " ${dict[@]}
 
+echo "Dictionary keys = " ${!dict[@]}
+echo "Dictionary values = " ${dict[@]}
+
+declare -a array
+
+array=(${dict[@]})
+
+echo "Array = " ${array[@]}
